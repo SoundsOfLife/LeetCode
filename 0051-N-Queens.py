@@ -4,7 +4,7 @@ class Solution:
         :type n: int
         :rtype: List[List[str]]
         """
-        
+
 
 
 if __name__ == '__main__':
