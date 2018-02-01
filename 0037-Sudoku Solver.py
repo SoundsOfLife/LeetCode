@@ -22,4 +22,3 @@ class Solution:
         for i in range(9):
             for j in range(9):
                 if board[i][j] != 0:
-                    
