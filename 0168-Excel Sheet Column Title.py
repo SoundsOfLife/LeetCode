@@ -4,16 +4,16 @@ class Solution:
         :type n: int
         :rtype: str
         """
-        if n == 1:
-            return "A"
-        else:
-            ans = ""
-            while n > 1:
+        ans = ""
+        while n > 0:
+            if n % 27 != 0:
                 ans += chr(n % 27 + 64)
-                n = (n // 26)
-            return ans[::-1]
+            else:
+                ans += chr(n % 26 + 64)
+            n = (n // 26)
+        return ans[::-1]
 
 
 if __name__ == '__main__':
     sol = Solution()
-    print(sol.convertToTitle(27))
+    print(sol.convertToTitle(26))
