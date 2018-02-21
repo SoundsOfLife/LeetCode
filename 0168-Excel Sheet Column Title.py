@@ -6,14 +6,12 @@ class Solution:
         """
         ans = ""
         while n > 0:
-            if n % 27 != 0:
-                ans += chr(n % 27 + 64)
-            else:
-                ans += chr(n % 26 + 64)
-            n = (n // 26)
+            num = n % 27
+            ans += chr(int(num) + 64)
+            n = n // 26
         return ans[::-1]
 
 
 if __name__ == '__main__':
     sol = Solution()
-    print(sol.convertToTitle(26))
+    print(sol.convertToTitle(53))
