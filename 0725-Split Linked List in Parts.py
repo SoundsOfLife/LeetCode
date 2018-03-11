@@ -26,7 +26,7 @@ class Solution:
         nums = length // k
         more = length % k
         for i in range(k):
-            ans.append(nodes[])
+            pass
 
 
 if __name__ == '__main__':
